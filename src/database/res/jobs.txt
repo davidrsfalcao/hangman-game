@@ -1,0 +1,6 @@
+professor
+juiz
+advogado
+futebolista
+treinador
+

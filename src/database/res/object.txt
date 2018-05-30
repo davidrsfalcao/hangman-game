@@ -1,0 +1,6 @@
+borracha
+caneta
+mesa
+cadeira
+carregador
+telemovel

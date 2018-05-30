@@ -46,12 +46,11 @@ public class Word {
     }
 
     public String testLetter(char letter){
-
-        if(remainingLetters.containsValue(letter)){
+        if(remainingLetters.containsValue(Character.toLowerCase(letter))){
             Iterator it = remainingLetters.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry)it.next();
-                if(pair.getValue().equals(letter)){
+                if(pair.getValue().equals(Character.toLowerCase(letter))){
                     it.remove();
                 }
 
@@ -61,4 +60,5 @@ public class Word {
 
         return this.toString();
     }
+
 }
