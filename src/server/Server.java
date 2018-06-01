@@ -1,30 +1,38 @@
 package server;
 
+import communication.handlers.server.Handler;
+import communication.messages.Message;
+
 import java.net.*;
 import java.io.*;
 import java.util.*;
 
 public class Server implements Runnable {
 
+    private static Server instance = new Server();
     private Socket connection;
     private int ID;
+    private int count = 0;
+    private ArrayList<Thread> threads = new ArrayList<Thread>();
 
-    public static void main(String[] args) {
+    private Server(){
         int port = 8082;
-        int count = 0;
         try{
             ServerSocket socket1 = new ServerSocket(port);
             System.out.println("Server Initialized");
             while (true) {
                 Socket connection = socket1.accept();
                 Runnable runnable = new Server(connection, ++count);
-                Thread thread = new Thread(runnable);
-                thread.start();
+                threads.add(new Thread(runnable));
+                threads.get(threads.size()-1).start();
+
             }
         }
         catch (Exception e) {}
+
     }
-    Server(Socket s, int i) {
+
+    private Server(Socket s, int i) {
         this.connection = s;
         this.ID = i;
     }
@@ -40,7 +48,7 @@ public class Server implements Runnable {
             }
             System.out.println(process);
 
-            String returnCode = "Hello David" + (char) 13;
+            String returnCode = Handler.parse(Message.parse(process.toString()));
             BufferedOutputStream os = new BufferedOutputStream(connection.getOutputStream());
             OutputStreamWriter osw = new OutputStreamWriter(os, "US-ASCII");
             osw.write(returnCode);
@@ -55,5 +63,9 @@ public class Server implements Runnable {
             }
             catch (IOException e){}
         }
+    }
+
+    public static Server getInstance() {
+        return instance;
     }
 }

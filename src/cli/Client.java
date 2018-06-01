@@ -1,5 +1,8 @@
 package cli;
 
+import communication.messages.JoinMessage;
+import communication.responses.JoinResponse;
+
 import java.net.*;
 import java.io.*;
 
@@ -29,7 +32,7 @@ public class Client {
              * encoding.
              */
             OutputStreamWriter osw = new OutputStreamWriter(bos, "US-ASCII");
-            String process = "Hello Jéssica"+  (char) 13;
+            String process = new JoinMessage().toString();
 
             /** Write across the socket connection and flush the buffer */
             osw.write(process);
@@ -45,7 +48,6 @@ public class Client {
             /**Instantiate an InputStreamReader with the optional
              * character encoding.
              */
-
             InputStreamReader isr = new InputStreamReader(bis, "US-ASCII");
 
             /**Read the socket's InputStream and append to a StringBuffer */
