@@ -2,6 +2,7 @@ package database;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Dictionary {
     private static Dictionary instance;
@@ -32,9 +33,24 @@ public class Dictionary {
 
     private void loadFiles() throws IOException {
         Reader reader = new Reader();
-        reader.loadfile("animals.txt",Category.animal);
-        reader.loadfile("jobs.txt",Category.job);
-        reader.loadfile("object.txt",Category.object);
+        reader.loadfile("animals.txt",Category.animal, words);
+        reader.loadfile("jobs.txt",Category.job, words);
+        reader.loadfile("object.txt",Category.object, words);
+    }
+
+    public Word getRandomWord(){
+
+        int size = words.size();
+        Random rand = new Random();
+
+        if(size == 0)
+            return null;
+
+        int index = rand.nextInt(size);
+        Word word =  words.get(index);
+        words.remove(index);
+
+        return word;
     }
 
 }

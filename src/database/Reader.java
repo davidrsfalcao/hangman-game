@@ -6,10 +6,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Reader {
 
-    public void loadfile(String fileName, Category cat) throws IOException {
+    public Reader(){};
+
+    public void loadfile(String fileName, Category cat, ArrayList<Word> words) throws IOException {
 
         InputStream in = getClass().getResourceAsStream("res/"+ fileName);
 
@@ -19,7 +22,7 @@ public class Reader {
         //InputStream in = getClass().getResourceAsStream("res/"+fileName);
 
         while((readWord = br.readLine()) != null)
-            Dictionary.getInstance().getWords().add(new Word(readWord.toLowerCase(), cat));
+            words.add(new Word(readWord.toLowerCase(), cat));
 
         br.close();
     }

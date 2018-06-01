@@ -10,11 +10,13 @@ import database.Dictionary.Category;
 public class Word {
     private String complete;
     private Category category;
+    private int nrTries;
     private HashMap<Integer, Character> remainingLetters = new HashMap<Integer, Character>();
 
     public Word(String word, Category category){
         this.complete = word;
         this.category = category;
+        this.nrTries = 0;
 
         for(int i=0; i < complete.length(); i++){
             remainingLetters.put(i, complete.charAt(i));
@@ -58,7 +60,12 @@ public class Word {
 
         }
 
+        this.nrTries++;
+
         return this.toString();
     }
 
+    public int getNrTries() {
+        return nrTries;
+    }
 }
