@@ -1,5 +1,6 @@
 import cli.Cli;
 import cli.Client;
+import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
 import server.Server;
 
 import java.util.Scanner;
@@ -19,7 +20,11 @@ public class Launcher {
                 break;
 
             case 2:
-                new Client();
+                //new Client();
+                System.out.print("IP: ");
+                Scanner scanner = new Scanner(System.in);
+                String ip = scanner.nextLine();
+                new Client(ip);
                 break;
         }
 

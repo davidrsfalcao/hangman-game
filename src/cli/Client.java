@@ -26,6 +26,17 @@ public class Client implements Runnable {
 
     }
 
+    public Client(String ip) {
+        this.host = ip;
+        Runnable runnable = this;
+        thread = new Thread(runnable);
+        thread.start();
+
+        System.out.println("SocketClient initialized");
+
+
+    }
+
     @Override
     public void run() {
         StringBuffer response = new StringBuffer();

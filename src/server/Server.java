@@ -17,8 +17,15 @@ public class Server implements Runnable {
 
     private Server(){
         int port = 8082;
+        try {
+            System.out.println("IP:" + InetAddress.getLocalHost().getHostAddress());
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+
         try{
             ServerSocket socket1 = new ServerSocket(port);
+
             System.out.println("Server Initialized");
             while (true) {
                 connection = socket1.accept();
