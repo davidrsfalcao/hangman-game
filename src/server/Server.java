@@ -50,6 +50,7 @@ public class Server implements Runnable {
             OutputStreamWriter osw = new OutputStreamWriter(os, "US-ASCII");
             osw.write(response);
             System.out.println("SEND: "+ response);
+            System.out.println();
             osw.flush();
         }
         catch (Exception e) {

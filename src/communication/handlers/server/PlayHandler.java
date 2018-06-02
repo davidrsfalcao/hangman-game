@@ -2,7 +2,6 @@ package communication.handlers.server;
 
 import communication.messages.Message;
 import communication.messages.PlayMessage;
-import communication.messages.WordMessage;
 import communication.responses.WordResponse;
 import database.Word;
 import logic.GameLogic;
@@ -18,8 +17,6 @@ public class PlayHandler extends  Handler{
         String input = ((PlayMessage) message).getInput();
         Word word = logic.getActualWord();
         String newWord = "";
-
-        System.out.println("AQUI " + word);
 
         if(input.length() > 1){
             newWord = word.testWord(input);
