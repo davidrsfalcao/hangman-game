@@ -2,6 +2,7 @@ package server;
 
 import communication.handlers.server.Handler;
 import communication.messages.Message;
+import logic.GameLogic;
 
 import java.net.*;
 import java.io.*;
@@ -11,9 +12,8 @@ public class Server implements Runnable {
 
     private static Server instance = new Server();
     private Socket connection;
-    private int ID;
-    private int count = 0;
     private ArrayList<Thread> threads = new ArrayList<Thread>();
+    private GameLogic logic = new GameLogic();
 
     private Server(){
         int port = 8082;
@@ -21,8 +21,8 @@ public class Server implements Runnable {
             ServerSocket socket1 = new ServerSocket(port);
             System.out.println("Server Initialized");
             while (true) {
-                Socket connection = socket1.accept();
-                Runnable runnable = new Server(connection, ++count);
+                connection = socket1.accept();
+                Runnable runnable = this;
                 threads.add(new Thread(runnable));
                 threads.get(threads.size()-1).start();
 
@@ -32,26 +32,24 @@ public class Server implements Runnable {
 
     }
 
-    private Server(Socket s, int i) {
-        this.connection = s;
-        this.ID = i;
-    }
+
 
     public void run() {
         try {
             BufferedInputStream is = new BufferedInputStream(connection.getInputStream());
             InputStreamReader isr = new InputStreamReader(is);
             int character;
-            StringBuffer process = new StringBuffer();
+            StringBuffer message = new StringBuffer();
             while((character = isr.read()) != 13) {
-                process.append((char)character);
+                message.append((char)character);
             }
-            System.out.println(process);
+            System.out.println("RECEIVE: "+ message);
 
-            String returnCode = Handler.parse(Message.parse(process.toString()));
+            String response = Handler.parse(Message.parse(message.toString()), logic);
             BufferedOutputStream os = new BufferedOutputStream(connection.getOutputStream());
             OutputStreamWriter osw = new OutputStreamWriter(os, "US-ASCII");
-            osw.write(returnCode);
+            osw.write(response);
+            System.out.println("SEND: "+ response);
             osw.flush();
         }
         catch (Exception e) {
@@ -68,4 +66,5 @@ public class Server implements Runnable {
     public static Server getInstance() {
         return instance;
     }
+
 }

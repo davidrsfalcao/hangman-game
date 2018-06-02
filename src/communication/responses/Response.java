@@ -18,7 +18,11 @@ public abstract class Response implements Header {
         tp = args[0];
 
         switch (tp){
+            case JOIN:
+                return new JoinResponse(args);
 
+            case WORD:
+                return new WordResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");

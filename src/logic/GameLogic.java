@@ -61,6 +61,15 @@ public class GameLogic {
 
     }
 
+    public int getNrTries(){
+        int res = plays;
+
+        if(actualWord != null)
+            res += actualWord.getNrTries();
+
+        return res;
+    }
+
 
 
 

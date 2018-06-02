@@ -5,6 +5,7 @@ import database.Word;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -32,5 +33,6 @@ public class TestDatabase {
 
 
     }
+
 
 }

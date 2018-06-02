@@ -25,6 +25,9 @@ public abstract class Message implements Header {
 
             case WORD:
                 return new WordMessage(args);
+
+            case PLAY:
+                return new PlayMessage(args);
             /*
             case LOGIN:
                 return new LoginMessage(args);
@@ -41,8 +44,7 @@ public abstract class Message implements Header {
             case CREATEROOM:
                 return new CreateRoomMessage(args);
 
-            case PLAY:
-                return new PlayMessage(args);
+
 
             */
 

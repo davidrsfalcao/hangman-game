@@ -22,8 +22,6 @@ public class JoinResponse extends  Response{
             this.result = args[1];
         }
 
-
-
     }
 
     @Override

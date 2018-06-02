@@ -68,4 +68,15 @@ public class Word {
     public int getNrTries() {
         return nrTries;
     }
+
+    public String testWord(String word){
+
+        if(complete.equals(word)){
+            remainingLetters = new HashMap<>();
+            nrTries++;
+        }
+        else nrTries+= 10;
+
+        return this.toString();
+    }
 }
