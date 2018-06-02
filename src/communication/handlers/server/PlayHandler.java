@@ -8,8 +8,6 @@ import logic.GameLogic;
 
 
 public class PlayHandler extends  Handler{
-    private String word;
-    private String category;
     private String message;
 
     public PlayHandler(Message message, GameLogic logic){
