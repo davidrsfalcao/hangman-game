@@ -2,7 +2,7 @@ package communication.handlers.client;
 
 import cli.Client;
 import communication.messages.WordMessage;
-import communication.responses.JoinResponse;
+import communication.responses.ReconnectResponse;
 import communication.responses.Response;
 
 
@@ -11,7 +11,7 @@ public class ReconnectHandler extends Handler{
     private int nr_player;
 
     public ReconnectHandler(Response response, Client cli){
-        nr_player = ((JoinResponse) response).getNr_player();
+        nr_player = ((ReconnectResponse) response).getNr_player();
         cli.setNr_player(nr_player);
 
     }
