@@ -15,7 +15,6 @@ public class Server implements Runnable {
     private Socket connection;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
-    private ArrayList<Thread> threads = new ArrayList<>();
 
     public Server(){
         int port = 8082;
@@ -32,8 +31,8 @@ public class Server implements Runnable {
             while (true) {
                 connection = socket1.accept();
                 Runnable runnable = this;
-                threads.add(new Thread(runnable));
-                threads.get(threads.size()-1).start();
+                Thread thread = new Thread(runnable);
+                thread.start();
 
             }
         }
