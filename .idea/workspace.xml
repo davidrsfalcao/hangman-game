@@ -7,21 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/JoinHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/JoinHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/JoinMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/JoinMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/PlayMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/PlayMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/WordMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/WordMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/JoinResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/JoinResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forca.jar" beforeDir="false" afterPath="$PROJECT_DIR$/forca.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +63,7 @@
       <file leaf-file-name="Handler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="120">
               <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -462,7 +448,7 @@
       <workItem from="1527866967458" duration="1657000" />
       <workItem from="1527881549938" duration="4891000" />
       <workItem from="1527932905760" duration="17740000" />
-      <workItem from="1528021339652" duration="3662000" />
+      <workItem from="1528021339652" duration="4167000" />
     </task>
     <servers />
   </component>
@@ -499,11 +485,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50202000" />
+    <option name="totallyTimeSpent" value="50707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -962,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="120">
           <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
