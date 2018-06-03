@@ -19,6 +19,10 @@ public abstract class Handler implements Header {
             case WORD:
                 res = new WordHandler(response, cli).toString();
                 break;
+
+            case RECONNECT:
+                res = new ReconnectHandler(response, cli).toString();
+                break;
         }
 
         return res;

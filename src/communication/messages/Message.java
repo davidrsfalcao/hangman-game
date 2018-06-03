@@ -28,6 +28,9 @@ public abstract class Message implements Header {
 
             case PLAY:
                 return new PlayMessage(args);
+
+            case RECONNECT:
+                return new ReconnectMessage(args);
             /*
             case LOGIN:
                 return new LoginMessage(args);

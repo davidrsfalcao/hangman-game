@@ -1,7 +1,6 @@
 package communication.handlers.server;
 
 import communication.Header;
-import communication.handlers.server.JoinHandler;
 import communication.messages.Message;
 import logic.GameLogic;
 import server.Server;
@@ -24,6 +23,10 @@ public abstract class Handler implements Header {
 
             case PLAY:
                 res = new PlayHandler(message , server).toString();
+                break;
+
+            case RECONNECT:
+                res = new ReconnectHandler(message , server).toString();
                 break;
         }
 

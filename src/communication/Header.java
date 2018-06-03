@@ -6,14 +6,16 @@ public interface Header {
 
     String ERROR = "ERROR";
     String JOIN = "JOIN";
+    String RECONNECT = "RECONNECT";
     String WORD = "WORD";
+    String PLAY = "PLAY";
 
     String LOGIN = "LOGIN";
     String REGISTER = "REGISTER";
     String LISTROOMS = "LISTROOMS";
 
     String CREATEROOM = "CREATEROOM";
-    String PLAY = "PLAY";
+
 
 
 

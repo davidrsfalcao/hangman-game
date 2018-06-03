@@ -23,6 +23,9 @@ public abstract class Response implements Header {
 
             case WORD:
                 return new WordResponse(args);
+
+            case RECONNECT:
+                return new WordResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");
