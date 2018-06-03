@@ -1,22 +1,23 @@
 package communication.handlers.client;
 
 
+import cli.Client;
 import communication.messages.WordMessage;
 import communication.responses.JoinResponse;
 import communication.responses.Response;
 
 public class JoinHandler extends Handler{
 
-    private String message = "";
+    private int nr_player;
 
-    public JoinHandler(Response response){
-        if(((JoinResponse) response).getResult().equals(SUCCESS)){
-            message = new WordMessage().toString();
-        }
+    public JoinHandler(Response response, Client cli){
+        nr_player = ((JoinResponse) response).getNr_player();
+        cli.setNr_player(nr_player);
+
     }
 
     @Override
     public String toString() {
-        return message;
+        return new WordMessage(nr_player).toString();
     }
 }

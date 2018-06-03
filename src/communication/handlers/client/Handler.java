@@ -1,24 +1,23 @@
 package communication.handlers.client;
 
+import cli.Client;
 import communication.Header;
-import communication.handlers.client.JoinHandler;
 import communication.responses.Response;
 
 public abstract class Handler implements Header {
 
 
-    public static String parse(Response response){
+    public static String parse(Response response, Client cli){
 
         String res = "";
-        //System.out.println("HANDLER PARSE "+ response.getType());
 
         switch (response.getType()){
             case JOIN:
-                res = new JoinHandler(response).toString();
+                res = new JoinHandler(response, cli).toString();
                 break;
 
             case WORD:
-                res = new WordHandler(response).toString();
+                res = new WordHandler(response, cli).toString();
                 break;
         }
 

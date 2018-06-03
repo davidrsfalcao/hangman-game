@@ -1,5 +1,6 @@
 package communication.handlers.client;
 
+import cli.Client;
 import communication.handlers.server.Handler;
 import communication.messages.PlayMessage;
 import communication.messages.WordMessage;
@@ -14,8 +15,10 @@ public class WordHandler extends Handler {
     private String category;
     private int tries;
     private String input;
+    private int nr_player;
 
-    public WordHandler(Response response){
+    public WordHandler(Response response, Client client){
+        nr_player = client.getNr_player();
         word = ((WordResponse) response).getWord();
         category = ((WordResponse) response).getCategory();
         tries = ((WordResponse) response).getTries();
@@ -24,6 +27,6 @@ public class WordHandler extends Handler {
 
     @Override
     public String toString() {
-        return new PlayMessage(input).toString();
+        return new PlayMessage(nr_player, input).toString();
     }
 }

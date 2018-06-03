@@ -4,25 +4,26 @@ import communication.Header;
 import communication.handlers.server.JoinHandler;
 import communication.messages.Message;
 import logic.GameLogic;
+import server.Server;
 
 public abstract class Handler implements Header {
 
 
-    public static String parse(Message message, GameLogic logic){
+    public static String parse(Message message, Server server){
 
         String res = "";
 
         switch (message.getType()){
             case JOIN:
-                res = new JoinHandler().toString();
+                res = new JoinHandler(message, server).toString();
                 break;
 
             case WORD:
-                res = new WordHandler(logic).toString();
+                res = new WordHandler(message, server).toString();
                 break;
 
             case PLAY:
-                res = new PlayHandler(message , logic).toString();
+                res = new PlayHandler(message , server).toString();
                 break;
         }
 

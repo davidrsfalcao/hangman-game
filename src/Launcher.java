@@ -1,6 +1,4 @@
-import cli.Cli;
 import cli.Client;
-import jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment;
 import server.Server;
 
 import java.util.Scanner;
@@ -16,7 +14,7 @@ public class Launcher {
 
         switch (i){
             case 1:
-                Server.getInstance();
+                new Server();
                 break;
 
             case 2:

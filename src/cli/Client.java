@@ -14,6 +14,8 @@ public class Client implements Runnable {
     private Thread thread;
     private String host = "localhost";
     private int port = 8082;
+    private int nr_player;
+
 
     public Client() {
 
@@ -69,7 +71,7 @@ public class Client implements Runnable {
 
 
                 System.out.println("RECEIVE: "+response);
-                message = Handler.parse(Response.parse(response.toString()));
+                message = Handler.parse(Response.parse(response.toString()), this);
                 System.out.println("SEND: "+message);
             }
             catch (IOException f) {
@@ -87,5 +89,13 @@ public class Client implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public int getNr_player() {
+        return nr_player;
+    }
+
+    public void setNr_player(int nr_player) {
+        this.nr_player = nr_player;
     }
 }

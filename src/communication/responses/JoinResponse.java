@@ -2,10 +2,10 @@ package communication.responses;
 
 public class JoinResponse extends  Response{
 
-    private String result;
+    private int nr_player;
 
-    public JoinResponse(String result){
-        this.result = result;
+    public JoinResponse(int nr_player){
+        this.nr_player = nr_player;
     }
 
     public JoinResponse(String[] args){
@@ -19,19 +19,20 @@ public class JoinResponse extends  Response{
         }
         else{
             this.type = JOIN;
-            this.result = args[1];
+            this.nr_player = Integer.parseInt(args[1]);
         }
 
     }
 
     @Override
     public String toString() {
-        return JOIN + SEPARATOR + result + END_MESSAGE;
+        return JOIN + SEPARATOR + nr_player + END_MESSAGE;
 
     }
 
-    public String getResult() {
-        return result;
+    public int getNr_player() {
+        return nr_player;
     }
+
     
 }
