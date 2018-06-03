@@ -1,6 +1,7 @@
 package communication.handlers.client;
 
 import cli.Client;
+import communication.messages.ReconnectMessage;
 import communication.messages.WordMessage;
 import communication.responses.ReconnectResponse;
 import communication.responses.Response;
@@ -18,6 +19,6 @@ public class ReconnectHandler extends Handler{
 
     @Override
     public String toString() {
-        return new WordMessage(nr_player).toString();
+        return new ReconnectMessage(nr_player).toString();
     }
 }
