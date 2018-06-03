@@ -1,6 +1,7 @@
 package communication.handlers.server;
 
 import communication.messages.Message;
+import communication.messages.ReconnectMessage;
 import communication.messages.WordMessage;
 import communication.responses.WordResponse;
 import database.Word;
@@ -13,7 +14,7 @@ public class ReconnectHandler extends Handler{
     private int tries;
 
     public ReconnectHandler(Message message, Server server){
-        int nr_player = ((WordMessage) message).getNr_player();
+        int nr_player = ((ReconnectMessage) message).getNr_player();
 
         GameLogic playerLogic = server.getPlayersLogic().get(nr_player);
 
