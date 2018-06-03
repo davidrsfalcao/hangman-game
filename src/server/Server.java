@@ -6,15 +6,16 @@ import logic.GameLogic;
 
 import java.net.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Server implements Runnable {
 
     private Socket connection;
-    private GameLogic logic = new GameLogic();
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
+    private ArrayList<Thread> threads = new ArrayList<>();
 
     public Server(){
         int port = 8082;
@@ -31,15 +32,14 @@ public class Server implements Runnable {
             while (true) {
                 connection = socket1.accept();
                 Runnable runnable = this;
-                Thread thread = new Thread(runnable);
-                thread.start();
+                threads.add(new Thread(runnable));
+                threads.get(threads.size()-1).start();
 
             }
         }
         catch (Exception e) {}
 
     }
-
 
 
     public void run() {
@@ -73,9 +73,6 @@ public class Server implements Runnable {
     }
 
 
-    public GameLogic getLogic() {
-        return logic;
-    }
 
     public ConcurrentHashMap<String, Integer> getPlayers() {
         return players;
