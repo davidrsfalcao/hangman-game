@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/EndGameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/EndGameHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/NextWordHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/NextWordHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/ScoreMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/ScoreMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/EndGameResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/EndGameResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/res/jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/res/jobs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/CMDInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/CMDInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,20 +27,6 @@
               <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReconnectHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReconnectHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -96,6 +65,15 @@
                 <element signature="e#1104#1105#0" expanded="true" />
                 <element signature="e#1177#1178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="object.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/database/res/object.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -128,18 +106,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMDInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/CMDInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ScoreMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/messages/ScoreMessage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -157,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,30 +245,14 @@
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
@@ -482,7 +432,7 @@
       <workItem from="1527932905760" duration="17740000" />
       <workItem from="1528021339652" duration="8772000" />
       <workItem from="1528120697324" duration="801000" />
-      <workItem from="1528133180875" duration="12413000" />
+      <workItem from="1528133180875" duration="12841000" />
     </task>
     <servers />
   </component>
@@ -519,7 +469,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68526000" />
+    <option name="totallyTimeSpent" value="68954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="23" width="1280" height="730" extended-state="6" />
@@ -568,13 +518,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/database/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -959,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/object.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/res/jobs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1007,7 +943,7 @@
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1023,6 +959,16 @@
             <element signature="e#1104#1105#0" expanded="true" />
             <element signature="e#1177#1178#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/animals.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/object.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
