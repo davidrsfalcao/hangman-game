@@ -13,7 +13,7 @@ public class ReadyHandler extends Handler{
 
     private String result;
 
-    public ReadyHandler(Message message, Server server){
+    ReadyHandler(Message message, Server server){
 
         String server_ip = server.getIP();
 

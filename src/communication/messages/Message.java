@@ -23,17 +23,23 @@ public abstract class Message implements Header {
             case JOIN:
                 return new JoinMessage(args);
 
-            case WORD:
-                return new WordMessage(args);
-
-            case PLAY:
-                return new PlayMessage(args);
-
             case RECONNECT:
                 return new ReconnectMessage(args);
 
             case READY:
                 return new ReadyMessage(args);
+
+            case PLAY:
+                return new PlayMessage(args);
+
+            case WORD:
+                return new WordMessage(args);
+
+            case NEXTWORD:
+                return new NextWordMessage(args);
+
+
+
             /*
             case LOGIN:
                 return new LoginMessage(args);

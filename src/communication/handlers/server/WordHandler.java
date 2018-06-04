@@ -12,7 +12,7 @@ public class WordHandler extends  Handler{
     private String category;
     private int tries;
 
-    public WordHandler(Message message, Server server){
+    WordHandler(Message message, Server server){
         int nr_player = ((WordMessage) message).getNr_player();
 
         GameLogic playerLogic = server.getPlayersLogic().get(nr_player);

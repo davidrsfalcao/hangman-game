@@ -10,7 +10,7 @@ public class JoinHandler extends Handler{
 
     private int nr_player;
 
-    public JoinHandler(Response response, Client cli){
+    JoinHandler(Response response, Client cli){
         nr_player = ((JoinResponse) response).getNr_player();
         cli.setNr_player(nr_player);
 

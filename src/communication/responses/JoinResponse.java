@@ -8,14 +8,13 @@ public class JoinResponse extends  Response{
         this.nr_player = nr_player;
     }
 
-    public JoinResponse(String[] args){
+    JoinResponse(String[] args){
 
         if(args.length != 2 ){
             this.type = ERROR;
         }
-        else if(args[1] == ""){
+        else if(args[1].equals("")){
             this.type = ERROR;
-            return;
         }
         else{
             this.type = JOIN;

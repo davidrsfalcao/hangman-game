@@ -79,4 +79,9 @@ public class Word {
 
         return this.toString();
     }
+
+    public boolean isComplete(){
+        return this.toString().equals(complete);
+
+    }
 }

@@ -5,7 +5,7 @@ public class WaitResponse extends Response {
     public WaitResponse(){
     }
 
-    public WaitResponse(String[] args){
+    WaitResponse(String[] args){
 
         if(args.length != 1 ){
             this.type = ERROR;

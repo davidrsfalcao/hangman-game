@@ -9,7 +9,6 @@ public class GameLogic {
     private int plays = 0;
     private int nrWordsDone = 0;
     private int rounds = 3;
-    private boolean gameEnded = false;
     private ArrayList<Word> wordsDone = new ArrayList<Word>();
     private Word actualWord;
 
@@ -30,10 +29,6 @@ public class GameLogic {
         return rounds;
     }
 
-    public boolean isGameEnded() {
-        return gameEnded;
-    }
-
     public ArrayList<Word> getWordsDone() {
         return wordsDone;
     }
@@ -46,8 +41,9 @@ public class GameLogic {
         actualWord = Dictionary.getInstance().getRandomWord();
     }
 
+
     public boolean checkChangeWord(){
-        if(actualWord.getRemainingLetters().size() == 0){
+        if(actualWord.isComplete()){
             this.plays += actualWord.getNrTries();
             this.nrWordsDone++;
             return true;
@@ -56,9 +52,8 @@ public class GameLogic {
         else return false;
     }
 
-    public void checkGameEnd(){
-
-
+    public boolean checkGameEnd(){
+        return (nrWordsDone == rounds);
     }
 
     public int getNrTries(){

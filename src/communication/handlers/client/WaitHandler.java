@@ -8,10 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 public class WaitHandler extends Handler {
 
-    private int nr_player;
+    private String message;
 
-    public WaitHandler(Client client){
-        nr_player = client.getNr_player();
+    WaitHandler(Client client){
+        int nr_player = client.getNr_player();
 
         try {
             TimeUnit.SECONDS.sleep(1);
@@ -19,10 +19,15 @@ public class WaitHandler extends Handler {
             e.printStackTrace();
         }
 
+        if(client.isFinished()){
+            message = "SCORE";
+        }
+        else message = new ReadyMessage(nr_player).toString();
+
     }
 
     @Override
     public String toString(){
-        return new ReadyMessage(nr_player).toString();
+        return message;
     }
 }

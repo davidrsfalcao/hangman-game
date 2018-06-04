@@ -9,8 +9,10 @@ public interface Header {
     String RECONNECT = "RECONNECT";
     String READY = "READY";
     String WAIT = "WAIT";
-    String WORD = "WORD";
     String PLAY = "PLAY";
+    String WORD = "WORD";
+    String NEXTWORD = "NEXTWORD";
+
 
     String LOGIN = "LOGIN";
     String REGISTER = "REGISTER";

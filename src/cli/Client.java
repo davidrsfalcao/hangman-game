@@ -15,6 +15,7 @@ public class Client implements Runnable {
     private String host = "localhost";
     private int port = 8082;
     private int nr_player;
+    private boolean finished = false;
 
 
     public Client() {
@@ -97,5 +98,9 @@ public class Client implements Runnable {
 
     public void setNr_player(int nr_player) {
         this.nr_player = nr_player;
+    }
+
+    public boolean isFinished() {
+        return finished;
     }
 }

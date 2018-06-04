@@ -1,6 +1,7 @@
 package gui;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class CMDInterface {
 
@@ -14,9 +15,20 @@ public class CMDInterface {
         return scanner.nextLine();
     }
 
+    public static void nextWordInterface(){
+        clearScreen();
+        System.out.println("Word completed");
+        System.out.println("\n\n");
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     public static void clearScreen(){
-        for (int i=0; i<10; i++){
+        for (int i=0; i<40; i++){
             System.out.println();
         }
     }

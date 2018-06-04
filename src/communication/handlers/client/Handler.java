@@ -16,16 +16,20 @@ public abstract class Handler implements Header {
                 res = new JoinHandler(response, cli).toString();
                 break;
 
-            case WORD:
-                res = new WordHandler(response, cli).toString();
-                break;
-
             case RECONNECT:
                 res = new ReconnectHandler(response, cli).toString();
                 break;
 
             case WAIT:
                 res = new WaitHandler(cli).toString();
+                break;
+
+            case WORD:
+                res = new WordHandler(response, cli).toString();
+                break;
+
+            case NEXTWORD:
+                res = new NextWordHandler(response, cli).toString();
                 break;
         }
 

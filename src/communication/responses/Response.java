@@ -24,6 +24,9 @@ public abstract class Response implements Header {
             case WORD:
                 return new WordResponse(args);
 
+            case NEXTWORD:
+                return new NextWordResponse(args);
+
             case RECONNECT:
                 return new ReconnectResponse(args);
 
