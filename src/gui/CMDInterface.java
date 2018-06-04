@@ -33,4 +33,11 @@ public class CMDInterface {
         }
     }
 
+    public static void waitingScore(){
+        clearScreen();
+        System.out.println("Waiting Score");
+        System.out.println("\n\n");
+
+    }
+
 }

@@ -38,6 +38,9 @@ public abstract class Message implements Header {
             case NEXTWORD:
                 return new NextWordMessage(args);
 
+            case SCORE:
+                return new ScoreMessage(args);
+
 
 
             /*

@@ -12,6 +12,8 @@ public interface Header {
     String PLAY = "PLAY";
     String WORD = "WORD";
     String NEXTWORD = "NEXTWORD";
+    String ENDGAME = "ENDGAME";
+    String SCORE = "SCORE";
 
 
     String LOGIN = "LOGIN";

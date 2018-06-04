@@ -37,6 +37,9 @@ public abstract class Handler implements Header {
                 res = new NextWordHandler(message, server).toString();
                 break;
 
+            case SCORE:
+                res = new ScoreHandler(message, server).toString();
+                break;
 
         }
 

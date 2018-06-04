@@ -2,8 +2,8 @@ package communication.handlers.server;
 
 import communication.messages.Message;
 import communication.messages.NextWordMessage;
+import communication.responses.EndGameResponse;
 import communication.responses.WordResponse;
-import database.Dictionary;
 import database.Word;
 import logic.GameLogic;
 import server.Server;
@@ -18,7 +18,7 @@ public class NextWordHandler extends Handler {
         GameLogic playerLogic = server.getPlayersLogic().get(nr_player);
 
         if(playerLogic.checkGameEnd()){
-            response = "ACABOU";
+            response = new EndGameResponse().toString();
         }
         else{
             playerLogic.getNewWord();

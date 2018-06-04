@@ -32,6 +32,9 @@ public abstract class Response implements Header {
 
             case WAIT:
                 return new WaitResponse(args);
+
+            case ENDGAME:
+                return new EndGameResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");

@@ -2,6 +2,7 @@ package communication.handlers.client;
 
 import cli.Client;
 import communication.messages.ReadyMessage;
+import communication.messages.ScoreMessage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +21,7 @@ public class WaitHandler extends Handler {
         }
 
         if(client.isFinished()){
-            message = "SCORE";
+            message = new ScoreMessage(nr_player).toString();
         }
         else message = new ReadyMessage(nr_player).toString();
 

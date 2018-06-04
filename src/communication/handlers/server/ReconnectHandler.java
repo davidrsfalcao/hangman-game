@@ -2,32 +2,40 @@ package communication.handlers.server;
 
 import communication.messages.Message;
 import communication.messages.ReconnectMessage;
+import communication.responses.EndGameResponse;
 import communication.responses.WordResponse;
 import database.Word;
 import logic.GameLogic;
 import server.Server;
 
 public class ReconnectHandler extends Handler{
-    private String word;
-    private String category;
-    private int tries;
+    private String response;
+
 
     ReconnectHandler(Message message, Server server){
         int nr_player = ((ReconnectMessage) message).getNr_player();
 
         GameLogic playerLogic = server.getPlayersLogic().get(nr_player);
 
-        if(playerLogic.getActualWord() == null)
+        if(playerLogic.checkGameEnd()){
+            response = new EndGameResponse().toString();
+        }
+        else {
+            if(playerLogic.getActualWord() == null)
             playerLogic.getNewWord();
-        Word word = playerLogic.getActualWord();
-        this.word = word.toString();
-        this.category = word.getCategory().toString();
-        this.tries = playerLogic.getNrTries();
+
+            Word word = playerLogic.getActualWord();
+            String word_s = word.toString();
+            String category = word.getCategory().toString();
+            int tries = playerLogic.getNrTries();
+
+            response = new WordResponse(word_s, category, tries).toString();
+        }
     }
 
     @Override
     public String toString(){
-        return new WordResponse(word, category, tries).toString();
+        return response;
     }
 
 }
