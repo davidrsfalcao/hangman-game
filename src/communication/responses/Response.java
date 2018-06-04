@@ -26,6 +26,9 @@ public abstract class Response implements Header {
 
             case RECONNECT:
                 return new ReconnectResponse(args);
+
+            case WAIT:
+                return new WaitResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");

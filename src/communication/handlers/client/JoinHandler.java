@@ -2,7 +2,7 @@ package communication.handlers.client;
 
 
 import cli.Client;
-import communication.messages.WordMessage;
+import communication.messages.ReadyMessage;
 import communication.responses.JoinResponse;
 import communication.responses.Response;
 
@@ -18,6 +18,6 @@ public class JoinHandler extends Handler{
 
     @Override
     public String toString() {
-        return new WordMessage(nr_player).toString();
+        return new ReadyMessage(nr_player).toString();
     }
 }

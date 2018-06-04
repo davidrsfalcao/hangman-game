@@ -23,6 +23,10 @@ public abstract class Handler implements Header {
             case RECONNECT:
                 res = new ReconnectHandler(response, cli).toString();
                 break;
+
+            case WAIT:
+                res = new WaitHandler(cli).toString();
+                break;
         }
 
         return res;

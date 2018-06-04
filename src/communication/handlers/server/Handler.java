@@ -28,6 +28,10 @@ public abstract class Handler implements Header {
             case RECONNECT:
                 res = new ReconnectHandler(message , server).toString();
                 break;
+
+            case READY:
+                res = new ReadyHandler(message , server).toString();
+                break;
         }
 
         return res;

@@ -7,6 +7,8 @@ public interface Header {
     String ERROR = "ERROR";
     String JOIN = "JOIN";
     String RECONNECT = "RECONNECT";
+    String READY = "READY";
+    String WAIT = "WAIT";
     String WORD = "WORD";
     String PLAY = "PLAY";
 

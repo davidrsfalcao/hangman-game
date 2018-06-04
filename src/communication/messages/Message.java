@@ -31,6 +31,9 @@ public abstract class Message implements Header {
 
             case RECONNECT:
                 return new ReconnectMessage(args);
+
+            case READY:
+                return new ReadyMessage(args);
             /*
             case LOGIN:
                 return new LoginMessage(args);

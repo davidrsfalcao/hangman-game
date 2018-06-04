@@ -6,12 +6,12 @@ import logic.GameLogic;
 
 import java.net.*;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Server implements Runnable {
 
+    private String IP;
     private Socket connection;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
@@ -19,7 +19,7 @@ public class Server implements Runnable {
     public Server(){
         int port = 8082;
         try {
-            System.out.println("IP:" + InetAddress.getLocalHost().getHostAddress());
+            IP = InetAddress.getLocalHost().getHostAddress();
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
@@ -28,6 +28,7 @@ public class Server implements Runnable {
             ServerSocket socket1 = new ServerSocket(port);
 
             System.out.println("Server Initialized");
+            System.out.println("IP: " + IP);
             while (true) {
                 connection = socket1.accept();
                 Runnable runnable = this;
@@ -71,13 +72,15 @@ public class Server implements Runnable {
         }
     }
 
-
-
     public ConcurrentHashMap<String, Integer> getPlayers() {
         return players;
     }
 
     public HashMap<Integer, GameLogic> getPlayersLogic() {
         return playersLogic;
+    }
+
+    public String getIP() {
+        return IP;
     }
 }
