@@ -9,7 +9,7 @@ public class Dictionary {
     private ArrayList<Word> words = new ArrayList<Word>();
 
     public enum Category {
-        animal, country, object, brand, job
+        animal, country, object, brand, job, color
     }
 
     private Dictionary() {
@@ -36,6 +36,9 @@ public class Dictionary {
         reader.loadfile("animals.txt",Category.animal, words);
         reader.loadfile("jobs.txt",Category.job, words);
         reader.loadfile("object.txt",Category.object, words);
+        reader.loadfile("countries.txt",Category.country, words);
+        reader.loadfile("brands.txt",Category.brand, words);
+        reader.loadfile("colors.txt",Category.color, words);
     }
 
     public Word getRandomWord(){

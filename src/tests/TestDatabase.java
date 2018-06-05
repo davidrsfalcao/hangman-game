@@ -1,5 +1,6 @@
 package tests;
 
+import communication.Header;
 import database.Dictionary.Category;
 import database.Word;
 import org.junit.jupiter.api.Test;
@@ -30,9 +31,8 @@ public class TestDatabase {
         assertEquals("caran_uejo", word.testLetter('u'));
         assertEquals("caranguejo", word.testLetter('g'));
         assertEquals(0, word.getRemainingLetters().size());
-
+        assertEquals(true, word.isComplete());
 
     }
-
 
 }

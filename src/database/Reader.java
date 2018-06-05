@@ -22,7 +22,7 @@ public class Reader {
         //InputStream in = getClass().getResourceAsStream("res/"+fileName);
 
         while((readWord = br.readLine()) != null)
-            words.add(new Word(readWord.toLowerCase(), cat));
+            words.add(new Word(readWord, cat));
 
         br.close();
     }

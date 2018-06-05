@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="" />
+    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/database/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/TestDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TestDatabase.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,31 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JoinHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ScoreResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/responses/ScoreResponse.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -81,6 +60,70 @@
                 <element signature="e#424#425#0" expanded="true" />
                 <element signature="e#485#486#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/database/Dictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Word.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/Word.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+              <folding>
+                <element signature="e#1670#1671#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDatabase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -95,11 +138,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animals.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/res/animals.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -123,12 +161,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/server/ServerSocket.java" />
         <option value="$PROJECT_DIR$/src/communication/messages/ErrorMessage.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/ErrorResponse.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/JoinHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/Handler.java" />
-        <option value="$PROJECT_DIR$/src/tests/TestDatabase.java" />
         <option value="$PROJECT_DIR$/src/gui/CMDGui.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/WordResponse.java" />
         <option value="$PROJECT_DIR$/src/communication/messages/WordMessage.java" />
@@ -138,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/WaitResponse.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/NextWordResponse.java" />
-        <option value="$PROJECT_DIR$/src/database/Word.java" />
         <option value="$PROJECT_DIR$/src/communication/messages/NextWordMessage.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/NextWordHandler.java" />
         <option value="$PROJECT_DIR$/src/logic/GameLogic.java" />
@@ -153,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" />
-        <option value="$PROJECT_DIR$/src/database/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/server/ServerMaintenance.java" />
         <option value="$PROJECT_DIR$/src/communication/messages/JoinMessage.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/JoinResponse.java" />
@@ -174,6 +208,10 @@
         <option value="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" />
+        <option value="$PROJECT_DIR$/src/database/Reader.java" />
+        <option value="$PROJECT_DIR$/src/database/Word.java" />
+        <option value="$PROJECT_DIR$/src/tests/TestDatabase.java" />
+        <option value="$PROJECT_DIR$/src/database/Dictionary.java" />
       </list>
     </option>
   </component>
@@ -219,35 +257,14 @@
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="handlers" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="responses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="forca" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
@@ -260,6 +277,12 @@
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forca" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="JUnit.TestDatabase">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cli.Client" />
       <module name="forca" />
@@ -400,9 +423,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDatabase" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="JUnit.TestDatabase" />
         <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
@@ -426,20 +449,11 @@
       <workItem from="1528120697324" duration="801000" />
       <workItem from="1528133180875" duration="13299000" />
       <workItem from="1528189704607" duration="13129000" />
-      <workItem from="1528220192790" duration="1944000" />
+      <workItem from="1528220192790" duration="4835000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDatabase - 2018.05.30 at 14h 22m 18s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.05.30 at 14h 28m 08s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.05.30 at 14h 30m 52s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestDatabase - 2018.05.30 at 14h 31m 47s.xml">
       <configuration name="TestDatabase" configurationId="JUnit" />
     </history-entry>
@@ -461,12 +475,22 @@
     <history-entry file="TestDatabase - 2018.06.02 at 14h 41m 01s.xml">
       <configuration name="TestDatabase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestDatabase - 2018.06.05 at 20h 24m 36s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.05 at 20h 24m 48s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.05 at 20h 26m 10s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84485000" />
+    <option name="totallyTimeSpent" value="87376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -477,12 +501,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" weight="0.3292683" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -511,7 +535,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/server/ServerSocket.java" />
     <entry file="file://$PROJECT_DIR$/src/cli/ClientSocket.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/messages/ErrorMessage.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -521,13 +544,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/messages/BeginGameMessage.java" />
-    <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cli/Cli.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/responses/WordResponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -603,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/jobs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/responses/EndGameResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -624,27 +633,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -746,6 +734,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,19 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="method#Word#0;class#Word#0" />
-            <element signature="method#toString#0;class#Word#0" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,6 +883,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/jobs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -914,6 +899,58 @@
             <element signature="e#424#425#0" expanded="true" />
             <element signature="e#485#486#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+          <folding>
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
         </state>
       </provider>
     </entry>

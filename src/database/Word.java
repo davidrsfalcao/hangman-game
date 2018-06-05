@@ -19,7 +19,10 @@ public class Word {
         this.nrTries = 0;
 
         for(int i=0; i < complete.length(); i++){
-            remainingLetters.put(i, complete.charAt(i));
+
+            if((complete.charAt(i) != '-') && (complete.charAt(i) != ' ')){
+                remainingLetters.put(i, complete.charAt(i));
+            }
         }
     }
 
@@ -52,7 +55,8 @@ public class Word {
             Iterator it = remainingLetters.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry)it.next();
-                if(pair.getValue().equals(Character.toLowerCase(letter))){
+
+                if(Character.toLowerCase((Character) pair.getValue()) == (Character.toLowerCase(letter))){
                     it.remove();
                 }
 
@@ -71,7 +75,7 @@ public class Word {
 
     public String testWord(String word){
 
-        if(complete.equals(word)){
+        if(complete.toLowerCase().equals(word.toLowerCase())){
             remainingLetters = new HashMap<>();
             nrTries++;
         }
