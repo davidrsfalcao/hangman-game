@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" afterDir="false" />
-    </list>
+    <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -431,7 +426,7 @@
       <workItem from="1528120697324" duration="801000" />
       <workItem from="1528133180875" duration="13299000" />
       <workItem from="1528189704607" duration="13129000" />
-      <workItem from="1528220192790" duration="1803000" />
+      <workItem from="1528220192790" duration="1944000" />
     </task>
     <servers />
   </component>
@@ -468,11 +463,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84344000" />
+    <option name="totallyTimeSpent" value="84485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
