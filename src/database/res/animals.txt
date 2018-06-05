@@ -1,3 +1,5 @@
+arara
+avestruz
 tartaruga
 gato
 cao
