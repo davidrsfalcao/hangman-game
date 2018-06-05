@@ -21,6 +21,8 @@ public class PlayHandler extends Handler{
         Word word = playerLogic.getActualWord();
         String newWord;
 
+        updateActivity(nr_player, server);
+
         if(input.length() > 1){
             newWord = word.testWord(input);
         }

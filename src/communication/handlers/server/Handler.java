@@ -45,4 +45,24 @@ public abstract class Handler implements Header {
 
         return res;
     }
+
+    void updateActivity(int nrPlayer, Server server){
+
+        if(server.getServerMaintenance().getPlayersActivity().containsKey(nrPlayer)){
+            server.getServerMaintenance().getPlayersActivity().replace(nrPlayer, System.currentTimeMillis());
+        }
+        else {
+            System.out.println("\n\nALGO ERRADO NAO ESTA CERTO\n\n");
+            createActivity(nrPlayer, server);
+        }
+    }
+
+    void createActivity(int nrPlayer, Server server){
+        if(!server.getServerMaintenance().getPlayersActivity().containsKey(nrPlayer)){
+            server.getServerMaintenance().getPlayersActivity().put(nrPlayer, System.currentTimeMillis());
+        }
+        else {
+            System.out.println("\n\nALGO ERRADO NAO ESTA CERTO\n\n");
+        }
+    }
 }

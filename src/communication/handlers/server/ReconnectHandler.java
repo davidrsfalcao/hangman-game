@@ -31,6 +31,9 @@ public class ReconnectHandler extends Handler{
 
             response = new WordResponse(word_s, category, tries).toString();
         }
+
+        updateActivity(nr_player, server);
+
     }
 
     @Override

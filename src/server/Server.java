@@ -6,6 +6,7 @@ import logic.GameLogic;
 
 import java.net.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -15,6 +16,8 @@ public class Server implements Runnable {
     private Socket connection;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
+    private ServerMaintenance serverMaintenance = new ServerMaintenance();
+    private ArrayList<Integer> playersFinished = new ArrayList<>();
 
     public Server(){
         int port = 8082;
@@ -31,8 +34,7 @@ public class Server implements Runnable {
             System.out.println("IP: " + IP);
             while (true) {
                 connection = socket1.accept();
-                Runnable runnable = this;
-                Thread thread = new Thread(runnable);
+                Thread thread = new Thread(this);
                 thread.start();
 
             }
@@ -83,4 +85,28 @@ public class Server implements Runnable {
     public String getIP() {
         return IP;
     }
+
+    public ServerMaintenance getServerMaintenance() {
+        return serverMaintenance;
+    }
+
+    public void addFinishedPlayer(int nrPlayer){
+        if(!playersFinished.contains(nrPlayer)){
+            playersFinished.add(nrPlayer);
+        }
+    }
+
+    public boolean isGameFinished(){
+
+        ArrayList<Integer> activePlayers =  serverMaintenance.getActivePlayers();
+
+        for(int i=0; i < activePlayers.size(); i++){
+            if(!playersFinished.contains(activePlayers.get(i))){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 }

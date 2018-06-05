@@ -16,10 +16,10 @@ public class ReadyHandler extends Handler{
     ReadyHandler(Message message, Server server){
 
         String server_ip = server.getIP();
+        int nr_player = ((ReadyMessage) message).getNr_player();
 
         if(server.getPlayers().containsKey(server_ip)){
         //if(server.getPlayers().size() >= 2){
-            int nr_player = ((ReadyMessage) message).getNr_player();
 
             GameLogic playerLogic = server.getPlayersLogic().get(nr_player);
 
@@ -33,6 +33,7 @@ public class ReadyHandler extends Handler{
         }
         else result = new WaitResponse().toString();
 
+        updateActivity(nr_player, server);
 
     }
 

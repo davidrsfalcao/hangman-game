@@ -31,6 +31,8 @@ public class NextWordHandler extends Handler {
 
         }
 
+        updateActivity(nr_player, server);
+
     }
 
     @Override

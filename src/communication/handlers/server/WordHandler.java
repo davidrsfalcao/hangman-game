@@ -22,6 +22,8 @@ public class WordHandler extends  Handler{
         this.word = word.toString();
         this.category = word.getCategory().toString();
         this.tries = playerLogic.getNrTries();
+
+        updateActivity(nr_player, server);
     }
 
     @Override

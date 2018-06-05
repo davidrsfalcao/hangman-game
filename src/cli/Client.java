@@ -37,7 +37,6 @@ public class Client implements Runnable {
 
         System.out.println("SocketClient initialized");
 
-
     }
 
     @Override

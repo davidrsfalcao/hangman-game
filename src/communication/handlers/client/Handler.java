@@ -6,7 +6,6 @@ import communication.responses.Response;
 
 public abstract class Handler implements Header {
 
-
     public static String parse(Response response, Client cli){
 
         String res = "";
@@ -39,4 +38,5 @@ public abstract class Handler implements Header {
 
         return res;
     }
+
 }

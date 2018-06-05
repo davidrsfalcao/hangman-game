@@ -9,7 +9,7 @@ public class Dictionary {
     private ArrayList<Word> words = new ArrayList<Word>();
 
     public enum Category {
-        animal, countrie, object, brand, job
+        animal, country, object, brand, job
     }
 
     private Dictionary() {

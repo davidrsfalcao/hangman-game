@@ -19,12 +19,14 @@ public class JoinHandler extends Handler {
         if(server.getPlayers().containsKey(ip)){
             nr_player = server.getPlayers().get(ip);
             res = new ReconnectResponse(nr_player).toString();
+            updateActivity(nr_player, server);
         }
         else {
             nr_player = server.getPlayers().size();
             server.getPlayers().put(ip, nr_player);
             server.getPlayersLogic().put(nr_player,new GameLogic());
             res = new JoinResponse(nr_player).toString();
+            createActivity(nr_player, server);
         }
 
 
