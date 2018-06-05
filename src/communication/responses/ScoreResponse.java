@@ -31,7 +31,7 @@ public class ScoreResponse extends  Response{
         Iterator it = scores.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
-            message += (SEPARATOR + pair.getKey() + pair.getValue());
+            message += (SEPARATOR + pair.getKey() + SEPARATOR + pair.getValue());
         }
 
         message += END_MESSAGE;
