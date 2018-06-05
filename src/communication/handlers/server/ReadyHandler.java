@@ -17,6 +17,8 @@ public class ReadyHandler extends Handler{
 
         String server_ip = server.getIP();
         int nr_player = ((ReadyMessage) message).getNr_player();
+        String username = ((ReadyMessage) message).getUsername();
+        server.updatePlayersUsername(nr_player, username);
 
         if(server.getPlayers().containsKey(server_ip)){
         //if(server.getPlayers().size() >= 2){

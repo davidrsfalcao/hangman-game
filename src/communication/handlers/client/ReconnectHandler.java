@@ -12,8 +12,9 @@ public class ReconnectHandler extends Handler{
 
     ReconnectHandler(Response response, Client cli){
         nr_player = ((ReconnectResponse) response).getNr_player();
+        String username = ((ReconnectResponse) response).getUsername();
         cli.setNr_player(nr_player);
-
+        cli.setUsername(username);
     }
 
     @Override

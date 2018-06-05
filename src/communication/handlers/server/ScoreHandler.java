@@ -3,11 +3,17 @@ package communication.handlers.server;
 import communication.messages.Message;
 import communication.messages.ReadyMessage;
 import communication.messages.ScoreMessage;
+import communication.responses.ScoreResponse;
 import communication.responses.WaitResponse;
 import communication.responses.WordResponse;
 import database.Word;
 import logic.GameLogic;
 import server.Server;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class ScoreHandler extends Handler {
 
@@ -20,10 +26,21 @@ public class ScoreHandler extends Handler {
         updateActivity(nrPlayer, server);
         server.addFinishedPlayer(nrPlayer);
 
-        //TODO: Check all players ended game
-
         if(server.isGameFinished()){
-            result = "ACABOU" + (char) 13;
+
+            //TODO: Ordenar
+
+            final ArrayList<Integer> playersFinished = server.getPlayersFinished();
+            HashMap<String, Integer> scores = new HashMap<>();
+
+            for(int i=0; i < playersFinished.size(); i++){
+                int player = playersFinished.get(i);
+                String user = server.getPlayersUsername().get(player);
+                int score = server.getPlayersLogic().get(player).getNrTries();
+                scores.put(user,score);
+            }
+
+            result = new ScoreResponse(scores).toString();
         }
         else result = new WaitResponse().toString();
 

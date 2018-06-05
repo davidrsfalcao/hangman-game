@@ -3,6 +3,7 @@ package communication.handlers.server;
 import communication.messages.Message;
 import communication.messages.ReconnectMessage;
 import communication.responses.EndGameResponse;
+import communication.responses.JoinResponse;
 import communication.responses.WordResponse;
 import database.Word;
 import logic.GameLogic;
@@ -21,15 +22,7 @@ public class ReconnectHandler extends Handler{
             response = new EndGameResponse().toString();
         }
         else {
-            if(playerLogic.getActualWord() == null)
-            playerLogic.getNewWord();
-
-            Word word = playerLogic.getActualWord();
-            String word_s = word.toString();
-            String category = word.getCategory().toString();
-            int tries = playerLogic.getNrTries();
-
-            response = new WordResponse(word_s, category, tries).toString();
+            response = new JoinResponse(nr_player).toString();
         }
 
         updateActivity(nr_player, server);

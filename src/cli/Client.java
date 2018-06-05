@@ -7,6 +7,7 @@ import communication.responses.Response;
 
 import java.net.*;
 import java.io.*;
+import java.util.Scanner;
 
 
 public class Client implements Runnable {
@@ -15,6 +16,7 @@ public class Client implements Runnable {
     private String host = "localhost";
     private int port = 8082;
     private int nr_player;
+    private String username = "";
     private boolean finished = false;
 
 
@@ -41,9 +43,10 @@ public class Client implements Runnable {
 
     @Override
     public void run() {
-        StringBuffer response = new StringBuffer();
+        StringBuffer response;
         Socket connection = null;
         boolean end = false;
+
 
         String message = new JoinMessage().toString();
 
@@ -99,6 +102,14 @@ public class Client implements Runnable {
         this.nr_player = nr_player;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public boolean isFinished() {
         return finished;
     }
@@ -106,4 +117,5 @@ public class Client implements Runnable {
     public void setFinished(boolean finished) {
         this.finished = finished;
     }
+
 }

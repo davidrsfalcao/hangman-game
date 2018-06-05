@@ -35,6 +35,9 @@ public abstract class Response implements Header {
 
             case ENDGAME:
                 return new EndGameResponse(args);
+
+            case SCORE:
+                return new ScoreResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");

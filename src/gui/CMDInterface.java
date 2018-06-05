@@ -40,4 +40,30 @@ public class CMDInterface {
 
     }
 
+    public static String insertUsername(){
+        String username = "";
+
+        while(!isAValidUsername(username)){
+            clearScreen();
+            System.out.print("Username: ");
+            Scanner scanner = new Scanner(System.in);
+            username = scanner.nextLine();
+            System.out.print("\n\n");
+        }
+
+        return username;
+    }
+
+    private static boolean isAValidUsername(String username){
+
+        if(username.equals(""))
+            return false;
+
+        // TODO
+
+        return true;
+
+    }
+
+
 }

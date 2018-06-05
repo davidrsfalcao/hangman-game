@@ -16,9 +16,11 @@ public class JoinHandler extends Handler {
 
 
         int nr_player;
+        String username;
         if(server.getPlayers().containsKey(ip)){
             nr_player = server.getPlayers().get(ip);
-            res = new ReconnectResponse(nr_player).toString();
+            username = server.getPlayersUsername().get(nr_player);
+            res = new ReconnectResponse(nr_player,username).toString();
             updateActivity(nr_player, server);
         }
         else {

@@ -23,7 +23,7 @@ public class WaitHandler extends Handler {
         if(client.isFinished()){
             message = new ScoreMessage(nr_player).toString();
         }
-        else message = new ReadyMessage(nr_player).toString();
+        else message = new ReadyMessage(nr_player, client.getUsername()).toString();
 
     }
 

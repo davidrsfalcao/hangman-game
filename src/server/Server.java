@@ -16,6 +16,7 @@ public class Server implements Runnable {
     private Socket connection;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
+    private HashMap<Integer, String> playersUsername = new HashMap<>();
     private ServerMaintenance serverMaintenance = new ServerMaintenance();
     private ArrayList<Integer> playersFinished = new ArrayList<>();
 
@@ -108,5 +109,19 @@ public class Server implements Runnable {
         return true;
     }
 
+    public HashMap<Integer, String> getPlayersUsername() {
+        return playersUsername;
+    }
 
+    public void updatePlayersUsername(int nrPlayer, String username){
+
+        if(playersUsername.containsValue(nrPlayer)){
+            playersUsername.replace(nrPlayer, username);
+        }
+        else playersUsername.put(nrPlayer, username);
+    }
+
+    public ArrayList<Integer> getPlayersFinished() {
+        return playersFinished;
+    }
 }
