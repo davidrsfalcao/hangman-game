@@ -19,6 +19,7 @@ public class JoinHandler extends Handler{
 
         if(username.equals("")){
             username = CMDInterface.insertUsername();
+            cli.setUsername(username);
         }
 
     }

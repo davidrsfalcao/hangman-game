@@ -7,22 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/ReconnectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/ReconnectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/JoinHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/JoinHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/messages/ReadyMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/messages/ReadyMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/ReconnectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/ReconnectResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/responses/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/responses/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/CMDInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/CMDInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +25,48 @@
       <file leaf-file-name="ReadyHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="138">
               <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadyMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/messages/ReadyMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding>
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -118,18 +143,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
               <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/communication/messages/ReadyMessage.java" />
         <option value="$PROJECT_DIR$/src/cli/Client.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/ReconnectHandler.java" />
-        <option value="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java" />
         <option value="$PROJECT_DIR$/src/gui/CMDInterface.java" />
@@ -209,6 +221,7 @@
         <option value="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" />
         <option value="$PROJECT_DIR$/src/server/Server.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" />
+        <option value="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" />
       </list>
     </option>
   </component>
@@ -263,6 +276,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="communication" type="462c0819:PsiDirectoryNode" />
               <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forca" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
@@ -459,7 +480,7 @@
       <workItem from="1528021339652" duration="8772000" />
       <workItem from="1528120697324" duration="801000" />
       <workItem from="1528133180875" duration="13299000" />
-      <workItem from="1528189704607" duration="11648000" />
+      <workItem from="1528189704607" duration="11954000" />
     </task>
     <servers />
   </component>
@@ -496,7 +517,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81060000" />
+    <option name="totallyTimeSpent" value="81366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1280" height="730" extended-state="6" />
@@ -596,18 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,18 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/messages/ReadyMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cli/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -856,16 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -948,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/responses/JoinResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -969,6 +946,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ReadyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/messages/ReadyMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WordHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
