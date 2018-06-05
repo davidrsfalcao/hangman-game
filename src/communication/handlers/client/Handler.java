@@ -34,6 +34,10 @@ public abstract class Handler implements Header {
             case ENDGAME:
                 res = new EndGameHandler(cli).toString();
                 break;
+
+            case SCORE:
+                res = new ScoreHandler(response, cli).toString();
+                break;
         }
 
         return res;

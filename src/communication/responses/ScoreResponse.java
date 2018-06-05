@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class ScoreResponse extends  Response{
 
-    private HashMap<String, Integer> scores;
+    private HashMap<String, Integer> scores = new HashMap<>();
 
     public ScoreResponse(HashMap<String, Integer> scores){
         this.scores = scores;
@@ -18,10 +18,14 @@ public class ScoreResponse extends  Response{
         if((args.length) % 2 != 1){
             this.type = ERROR;
         }
-        else while(i < args.length){
-            scores.put(args[i], Integer.parseInt(args[i+1]));
-            i+=2;
+        else {
+            this.type = SCORE;
+            while((i+1) < args.length){
+                scores.put(args[i], Integer.parseInt(args[i+1]));
+                i+=2;
+            }
         }
+
     }
 
     @Override
