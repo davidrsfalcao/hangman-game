@@ -4,9 +4,21 @@ public class PlayMessage extends Message {
     private String input;
     private int nr_player;
 
-    public PlayMessage(int nr_player,String input) {
-        this.input = input;
+    public PlayMessage(int nr_player, String input) {
         this.nr_player = nr_player;
+
+        if(!input.equals("")){
+            this.input = "" + (int) input.charAt(0);
+
+            if(input.length() > 1){
+                for(int i=1; i< input.length(); i++){
+                    this.input += SEPARATOR_STRING + (int) input.charAt(i);
+                }
+            }
+
+        }
+
+
     }
 
     public PlayMessage(String[] args){
@@ -16,7 +28,15 @@ public class PlayMessage extends Message {
         }
         else{
             nr_player = Integer.parseInt(args[1]);
-            input = args[2];
+
+            String[] chars = args[2].split(SEPARATOR_STRING);
+
+            this.input = "";
+
+            for(int i=0; i < chars.length; i++){
+                input += (char) Integer.parseInt(chars[i]);
+            }
+
             this.type  = PLAY;
 
 

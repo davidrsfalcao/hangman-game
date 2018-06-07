@@ -4,8 +4,6 @@ import communication.messages.Message;
 import communication.messages.ReconnectMessage;
 import communication.responses.EndGameResponse;
 import communication.responses.JoinResponse;
-import communication.responses.WordResponse;
-import database.Word;
 import logic.GameLogic;
 import server.Server;
 

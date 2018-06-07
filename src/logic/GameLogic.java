@@ -3,34 +3,17 @@ package logic;
 import database.Dictionary;
 import database.Word;
 
-import java.util.ArrayList;
 
 public class GameLogic {
     private int plays = 0;
     private int nrWordsDone = 0;
-    private int rounds = 3;
-    private ArrayList<Word> wordsDone = new ArrayList<Word>();
+    private int rounds;
     private Word actualWord;
 
-    public GameLogic(){
+    public GameLogic(int rounds){
+        this.rounds = rounds;
         Dictionary.getInstance();
 
-    }
-
-    public int getPlays() {
-        return plays;
-    }
-
-    public int getNrWordsDone() {
-        return nrWordsDone;
-    }
-
-    public int getRounds() {
-        return rounds;
-    }
-
-    public ArrayList<Word> getWordsDone() {
-        return wordsDone;
     }
 
     public Word getActualWord() {
@@ -53,7 +36,7 @@ public class GameLogic {
     }
 
     public boolean checkGameEnd(){
-        return (nrWordsDone == rounds);
+        return (nrWordsDone == this.rounds);
     }
 
     public int getNrTries(){

@@ -1,17 +1,16 @@
 package database;
 
-import java.util.ArrayList;
+import database.Dictionary.Category;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import database.Dictionary.Category;
 
 public class Word {
     private String complete;
     private Category category;
     private int nrTries;
-    private HashMap<Integer, Character> remainingLetters = new HashMap<Integer, Character>();
+    private HashMap<Integer, Character> remainingLetters = new HashMap<>();
 
     public Word(String word, Category category){
         this.complete = word;
@@ -21,7 +20,7 @@ public class Word {
         for(int i=0; i < complete.length(); i++){
 
             if((complete.charAt(i) != '-') && (complete.charAt(i) != ' ')){
-                remainingLetters.put(i, complete.charAt(i));
+                remainingLetters.put(i, Character.toLowerCase(complete.charAt(i)));
             }
         }
     }
@@ -40,18 +39,18 @@ public class Word {
 
     @Override
     public String toString(){
-        String result="";
+        StringBuilder result= new StringBuilder();
 
         for (int i=0; i < complete.length(); i++){
             if(!remainingLetters.containsKey(i))
-                result += complete.charAt(i);
-            else result += "_";
+                result.append(complete.charAt(i));
+            else result.append("_");
         }
-        return result;
+        return result.toString();
     }
 
     public String testLetter(char letter){
-        if(remainingLetters.containsValue(Character.toLowerCase(letter))){
+        if((remainingLetters.containsValue(Character.toLowerCase(letter)))){
             Iterator it = remainingLetters.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pair = (Map.Entry)it.next();

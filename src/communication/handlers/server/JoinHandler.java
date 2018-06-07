@@ -26,7 +26,7 @@ public class JoinHandler extends Handler {
         else {
             nr_player = server.getPlayers().size();
             server.getPlayers().put(ip, nr_player);
-            server.getPlayersLogic().put(nr_player,new GameLogic());
+            server.getPlayersLogic().put(nr_player,new GameLogic(server.getRounds()));
             res = new JoinResponse(nr_player).toString();
             createActivity(nr_player, server);
         }

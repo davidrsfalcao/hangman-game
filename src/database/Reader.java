@@ -8,18 +8,17 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class Reader {
+class Reader {
 
-    public Reader(){};
+    Reader(){};
 
-    public void loadfile(String fileName, Category cat, ArrayList<Word> words) throws IOException {
+    void loadFile(String fileName, Category cat, ArrayList<Word> words) throws IOException {
 
         InputStream in = getClass().getResourceAsStream("res/"+ fileName);
 
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         String readWord;
 
-        //InputStream in = getClass().getResourceAsStream("res/"+fileName);
 
         while((readWord = br.readLine()) != null)
             words.add(new Word(readWord, cat));

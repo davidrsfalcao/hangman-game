@@ -7,9 +7,17 @@ public class WordResponse extends  Response{
     private int tries;
 
     public WordResponse(String word, String category, int tries){
-        this.word = word;
         this.category = category;
         this.tries = tries;
+
+        this.word = "" + (int) word.charAt(0);
+
+        if(word.length() > 1){
+            for(int i=1; i< word.length(); i++){
+                this.word += SEPARATOR_STRING + (int) word.charAt(i);
+            }
+        }
+
     }
 
     public WordResponse(String[] args){
@@ -31,9 +39,16 @@ public class WordResponse extends  Response{
         }
         else{
             this.type = WORD;
-            this.word = args[1];
             this.category = args[2];
             this.tries = Integer.parseInt(args[3]);
+
+            String[] chars = args[1].split(SEPARATOR_STRING);
+            this.word = "";
+
+            for(int i=0; i < chars.length; i++){
+                this.word += (char) Integer.parseInt(chars[i]);
+            }
+
         }
 
     }

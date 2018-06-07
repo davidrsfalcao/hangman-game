@@ -2,12 +2,11 @@ package cli;
 
 import communication.handlers.client.Handler;
 import communication.messages.JoinMessage;
-import communication.responses.JoinResponse;
 import communication.responses.Response;
 
-import java.net.*;
 import java.io.*;
-import java.util.Scanner;
+import java.net.InetAddress;
+import java.net.Socket;
 
 
 public class Client implements Runnable {

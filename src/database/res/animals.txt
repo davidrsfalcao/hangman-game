@@ -2,5 +2,5 @@ arara
 avestruz
 tartaruga
 gato
-cao
+cão
 leopardo

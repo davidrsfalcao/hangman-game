@@ -4,8 +4,11 @@ import communication.handlers.server.Handler;
 import communication.messages.Message;
 import logic.GameLogic;
 
-import java.net.*;
 import java.io.*;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
@@ -14,6 +17,7 @@ public class Server implements Runnable {
 
     private String IP;
     private Socket connection;
+    private int rounds = 3;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
     private HashMap<Integer, String> playersUsername = new HashMap<>();
@@ -123,5 +127,9 @@ public class Server implements Runnable {
 
     public ArrayList<Integer> getPlayersFinished() {
         return playersFinished;
+    }
+
+    public int getRounds() {
+        return rounds;
     }
 }

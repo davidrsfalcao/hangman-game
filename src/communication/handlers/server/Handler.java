@@ -2,7 +2,6 @@ package communication.handlers.server;
 
 import communication.Header;
 import communication.messages.Message;
-import logic.GameLogic;
 import server.Server;
 
 public abstract class Handler implements Header {

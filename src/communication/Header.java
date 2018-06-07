@@ -2,6 +2,7 @@ package communication;
 
 public interface Header {
     String SEPARATOR = "!@!";
+    String SEPARATOR_STRING = "###";
     char END_MESSAGE = (char) 13;
 
     String ERROR = "ERROR";
@@ -15,16 +16,4 @@ public interface Header {
     String ENDGAME = "ENDGAME";
     String SCORE = "SCORE";
 
-
-    String LOGIN = "LOGIN";
-    String REGISTER = "REGISTER";
-    String LISTROOMS = "LISTROOMS";
-
-    String CREATEROOM = "CREATEROOM";
-
-
-
-
-    String SUCCESS = "SUCCESS";
-    String FAILURE = "FAILURE";
 }

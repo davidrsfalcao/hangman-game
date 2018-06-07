@@ -28,7 +28,7 @@ public abstract class Handler implements Header {
                 break;
 
             case NEXTWORD:
-                res = new NextWordHandler(response, cli).toString();
+                res = new NextWordHandler(cli).toString();
                 break;
 
             case ENDGAME:

@@ -1,19 +1,13 @@
 package communication.handlers.server;
 
 import communication.messages.Message;
-import communication.messages.ReadyMessage;
 import communication.messages.ScoreMessage;
 import communication.responses.ScoreResponse;
 import communication.responses.WaitResponse;
-import communication.responses.WordResponse;
-import database.Word;
-import logic.GameLogic;
 import server.Server;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class ScoreHandler extends Handler {
 

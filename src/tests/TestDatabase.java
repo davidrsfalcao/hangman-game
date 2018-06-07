@@ -1,12 +1,8 @@
 package tests;
 
-import communication.Header;
 import database.Dictionary.Category;
 import database.Word;
 import org.junit.jupiter.api.Test;
-
-import java.util.HashMap;
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -34,5 +30,7 @@ public class TestDatabase {
         assertEquals(true, word.isComplete());
 
     }
+
+
 
 }

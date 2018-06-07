@@ -1,7 +1,6 @@
 package communication.handlers.client;
 
 import cli.Client;
-import communication.messages.ScoreMessage;
 import communication.responses.Response;
 
 public class ScoreHandler extends Handler {
