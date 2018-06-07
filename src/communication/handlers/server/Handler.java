@@ -2,6 +2,7 @@ package communication.handlers.server;
 
 import communication.Header;
 import communication.messages.Message;
+import communication.responses.ErrorResponse;
 import server.Server;
 
 public abstract class Handler implements Header {
@@ -9,7 +10,7 @@ public abstract class Handler implements Header {
 
     public static String parse(Message message, Server server){
 
-        String res = "";
+        String res = new ErrorResponse("Wrong response").toString();
 
         switch (message.getType()){
             case JOIN:
@@ -51,7 +52,6 @@ public abstract class Handler implements Header {
             server.getServerMaintenance().getPlayersActivity().replace(nrPlayer, System.currentTimeMillis());
         }
         else {
-            System.out.println("\n\nALGO ERRADO NAO ESTA CERTO\n\n");
             createActivity(nrPlayer, server);
         }
     }
@@ -59,9 +59,6 @@ public abstract class Handler implements Header {
     void createActivity(int nrPlayer, Server server){
         if(!server.getServerMaintenance().getPlayersActivity().containsKey(nrPlayer)){
             server.getServerMaintenance().getPlayersActivity().put(nrPlayer, System.currentTimeMillis());
-        }
-        else {
-            System.out.println("\n\nALGO ERRADO NAO ESTA CERTO\n\n");
         }
     }
 }

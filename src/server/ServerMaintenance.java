@@ -15,7 +15,7 @@ public class ServerMaintenance implements Runnable {
     private boolean end = false;
 
     ServerMaintenance(){
-        maxInativeTime = 30; // seconds
+        maxInativeTime = 60; // seconds
         Thread thread = new Thread(this);
         thread.start();
     }

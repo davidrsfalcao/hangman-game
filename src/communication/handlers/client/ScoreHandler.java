@@ -6,15 +6,16 @@ import communication.responses.Response;
 public class ScoreHandler extends Handler {
 
     ScoreHandler(Response response, Client cli){
-        cli.setFinished(true);
+        cli.setEnd(true);
 
-        System.out.println("----------------------");
+        System.out.println("-----------------------");
         System.out.println(response.toString());
         System.out.println("-----------------------");
+
     }
 
     @Override
     public String toString() {
-        return "OLA";
+        return "QUIT" + (char) 13;
     }
 }

@@ -2,13 +2,14 @@ package communication.handlers.client;
 
 import cli.Client;
 import communication.Header;
+import communication.messages.ErrorMessage;
 import communication.responses.Response;
 
 public abstract class Handler implements Header {
 
     public static String parse(Response response, Client cli){
 
-        String res = "";
+        String res = new ErrorMessage("Wrong response").toString();
 
         switch (response.getType()){
             case JOIN:

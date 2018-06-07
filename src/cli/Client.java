@@ -17,6 +17,7 @@ public class Client implements Runnable {
     private int nr_player;
     private String username = "";
     private boolean finished = false;
+    private boolean end = false;
 
 
     public Client() {
@@ -44,8 +45,6 @@ public class Client implements Runnable {
     public void run() {
         StringBuffer response;
         Socket connection = null;
-        boolean end = false;
-
 
         String message = new JoinMessage().toString();
 
@@ -65,7 +64,7 @@ public class Client implements Runnable {
                 BufferedInputStream bis = new BufferedInputStream(connection.getInputStream());
                 InputStreamReader isr = new InputStreamReader(bis, "US-ASCII");
 
-                /**Read the socket's InputStream and append to a StringBuffer */
+                /* Read the socket's InputStream and append to a StringBuffer */
                 int c;
                 response = new StringBuffer();
                 while ( (c = isr.read()) != 13)
@@ -85,7 +84,7 @@ public class Client implements Runnable {
 
         }
 
-        /** Close the socket connection. */
+        /* Close the socket connection. */
         try {
             connection.close();
         } catch (IOException e) {
@@ -115,6 +114,10 @@ public class Client implements Runnable {
 
     public void setFinished(boolean finished) {
         this.finished = finished;
+    }
+
+    public void setEnd(boolean end){
+        this.end = end;
     }
 
 }
