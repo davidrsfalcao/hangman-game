@@ -2,6 +2,7 @@ package database;
 
 import database.Dictionary.Category;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -11,18 +12,34 @@ public class Word {
     private Category category;
     private int nrTries;
     private HashMap<Integer, Character> remainingLetters = new HashMap<>();
+    private final ArrayList<Character> specialChars = new ArrayList<>();
 
     public Word(String word, Category category){
         this.complete = word;
         this.category = category;
         this.nrTries = 0;
 
+        defineSpecialChars();
+
         for(int i=0; i < complete.length(); i++){
 
-            if((complete.charAt(i) != '-') && (complete.charAt(i) != ' ')){
+            if(!specialChars.contains(complete.charAt(i))){
                 remainingLetters.put(i, Character.toLowerCase(complete.charAt(i)));
             }
         }
+    }
+
+    private void defineSpecialChars(){
+        specialChars.add('-');
+        specialChars.add(' ');
+        specialChars.add('ã');
+        specialChars.add('ç');
+        specialChars.add('á');
+        specialChars.add('à');
+        specialChars.add('é');
+        specialChars.add('ê');
+        specialChars.add('ô');
+        specialChars.add('ó');
     }
 
     public String getComplete() {

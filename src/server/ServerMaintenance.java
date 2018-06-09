@@ -11,7 +11,6 @@ public class ServerMaintenance implements Runnable {
     private int maxInativeTime;
     private ConcurrentHashMap<Integer, Long> playersActivity = new ConcurrentHashMap<>();
     private ArrayList<Integer> inativePlayers = new ArrayList<>();
-
     private boolean end = false;
 
     ServerMaintenance(){
@@ -89,6 +88,10 @@ public class ServerMaintenance implements Runnable {
         }
 
         return activePlayers;
+    }
+
+    public void setEnd(boolean end){
+        this.end = end;
     }
 
 }

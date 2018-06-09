@@ -1,5 +1,157 @@
-professor
-juiz
+acupunturista
+administrador
 advogado
-futebolista
-treinador
+agente de viagens
+alfaiate
+analista comercial
+animador de festas
+antropólogo
+arqueólogo
+arquiteto
+artesão
+assessor de imprensa
+babá
+balconista
+barista
+barman
+bibliotecário
+biólogo
+biomédico
+bioquímico
+blogueiro
+bombeiro
+cabeleireiro
+calceteiro
+carpinteiro
+carteiro
+cenógrafo
+cenotécnico
+chapeiro
+chefe de cozinha
+comissário de bordo
+consultor
+contabilista
+coreógrafo
+corretor de seguros
+costureiro
+cozinheiro
+dançarino
+decorador
+degustador
+dentista
+depiladora
+desenhista
+designer
+diretor de marketing
+dj
+ecólogo
+economista
+editor de imagem
+eletricista
+embriologista
+encarregado administrativo
+enfermeiro
+engenheiro civil
+engenheiro informático
+escritor
+farmacêutico
+ferreiro
+fiscal
+fisioterapeuta
+florista
+fotógrafo
+garçom
+gastrônomo
+geólogo
+geógrafo
+gerente comercial
+gestor
+guia de turismo
+historiador
+ilustrador
+impressor
+inspetor criminal
+intérprete
+jardineiro
+jornaleiro
+jornalista
+laminador
+lavadeiro
+lavador
+líder comercial
+limpador de vidros
+maçariqueiro
+manicure
+maqueiro
+maquiador
+maquinista
+marceneiro
+marinheiro
+matemático
+mecânico
+médico
+mensageiro
+modelista
+modelo
+moleiro
+mordomo
+motorista
+nutricionista
+operador de caixa
+ourives
+padeiro
+paisagista
+palestrante
+pedagogo
+pedreiro
+peixeiro
+perfumista
+personal trainer
+pesquisador
+piloto
+pintor
+polidor
+porteiro
+professor
+programador
+promotor de eventos
+psicólogo
+publicitário
+químico
+radialista
+recepcionista
+recreador
+redador
+relojeiro
+repórter
+roteirista
+salva vidas
+sapateiro
+secretária
+segurança
+selecionador
+serralheiro
+sinaleiro
+sociólogo
+socorrista
+soldador
+sonoplasta
+sorveteiro
+steward
+suporte técnico
+telefonista
+tesoureiro
+topógrafo
+tosador
+trader
+tradutor
+turismólogo
+vendedor
+veterinário
+vigilante
+vitrinista
+web designer
+web developer
+webmaster
+zelador
+zootecnista

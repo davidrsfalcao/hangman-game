@@ -31,6 +31,18 @@ public class TestDatabase {
 
     }
 
+    @Test
+    public void testShowSpecialChars(){
+        Word word = new Word("França",Category.country);
+        assertEquals("____ç_", word.toString());
+
+        word = new Word("Austrália",Category.country);
+        assertEquals("_____á___", word.toString());
+
+        word = new Word("cão",Category.animal);
+        assertEquals("_ã_", word.toString());
+
+    }
 
 
 }

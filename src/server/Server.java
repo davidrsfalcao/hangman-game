@@ -18,7 +18,6 @@ public class Server implements Runnable {
     private String IP;
     private Socket connection;
     private int rounds = 3;
-    private boolean open = true;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
     private HashMap<Integer, GameLogic> playersLogic = new HashMap<>();
     private HashMap<Integer, String> playersUsername = new HashMap<>();
@@ -38,7 +37,7 @@ public class Server implements Runnable {
 
             System.out.println("Server Initialized");
             System.out.println("IP: " + IP);
-            while (open) {
+            while (!isGameFinished()) {
                 connection = socket1.accept();
                 Thread thread = new Thread(this);
                 thread.start();
@@ -49,7 +48,6 @@ public class Server implements Runnable {
         catch (Exception e) {}
 
     }
-
 
     public void run() {
         try {
@@ -112,6 +110,8 @@ public class Server implements Runnable {
                 return false;
             }
         }
+
+        serverMaintenance.setEnd(true);
         return true;
     }
 

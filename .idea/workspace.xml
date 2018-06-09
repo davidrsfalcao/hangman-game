@@ -7,15 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c2247a-4adf-4a7b-9361-aa7a92a30926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cli/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/res/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/res/jobs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/res/jobs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerMaintenance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerMaintenance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/TestDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TestDatabase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,32 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logic/GameLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +42,20 @@
       <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="67" />
+            <state relative-caret-position="148">
+              <caret line="11" column="67" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScoreHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,13 +66,68 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="360">
+              <caret line="113" column="37" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#isGameFinished#0;class#Server#0" />
+                <element signature="method#run#0;class#Server#0" />
+                <element signature="method#addFinishedPlayer#0;class#Server#0" />
                 <element signature="method#updatePlayersUsername#0;class#Server#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerMaintenance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/ServerMaintenance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addPlayerToInactives#0;class#ServerMaintenance#0" />
+                <element signature="method#removePlayerToInactives#0;class#ServerMaintenance#0" />
+                <element signature="method#getActivePlayers#0;class#ServerMaintenance#0" />
+                <element signature="e#2781#2782#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Word.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/Word.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#toString#0;class#Word#0" />
+                <element signature="method#testLetter#0;class#Word#0" />
+                <element signature="method#testWord#0;class#Word#0" />
+                <element signature="method#isComplete#0;class#Word#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDatabase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animals.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/database/res/animals.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -90,52 +135,8 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cli/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
+            <state relative-caret-position="15">
               <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3042#3043#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReconnectHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ReconnectHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndGameResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/responses/EndGameResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndGameHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/EndGameHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +158,7 @@
     <findStrings>
       <find>gameEnded</find>
       <find>gamelo</find>
+      <find>playersFinished</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/communication/messages/Message.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/EndGameHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/EndGameResponse.java" />
-        <option value="$PROJECT_DIR$/src/database/res/jobs.txt" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/NextWordHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/PlayHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/WordHandler.java" />
@@ -190,15 +191,12 @@
         <option value="$PROJECT_DIR$/src/gui/CMDInterface.java" />
         <option value="$PROJECT_DIR$/src/Launcher.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/Response.java" />
-        <option value="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/JoinHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/ScoreResponse.java" />
-        <option value="$PROJECT_DIR$/src/tests/TestDatabase.java" />
         <option value="$PROJECT_DIR$/src/database/res/test.txt" />
         <option value="$PROJECT_DIR$/src/communication/messages/PlayMessage.java" />
         <option value="$PROJECT_DIR$/src/communication/responses/WordResponse.java" />
         <option value="$PROJECT_DIR$/src/communication/Header.java" />
-        <option value="$PROJECT_DIR$/src/database/Word.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/NextWordHandler.java" />
         <option value="$PROJECT_DIR$/src/database/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/database/Reader.java" />
@@ -207,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/database/res/brands.txt" />
         <option value="$PROJECT_DIR$/src/database/res/colors.txt" />
         <option value="$PROJECT_DIR$/src/database/res/countries.txt" />
-        <option value="$PROJECT_DIR$/src/server/ServerMaintenance.java" />
         <option value="$PROJECT_DIR$/src/logic/GameLogic.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/Handler.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/server/Handler.java" />
@@ -215,6 +212,11 @@
         <option value="$PROJECT_DIR$/src/cli/ClientBackup.java" />
         <option value="$PROJECT_DIR$/src/cli/Client.java" />
         <option value="$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java" />
+        <option value="$PROJECT_DIR$/src/tests/TestDatabase.java" />
+        <option value="$PROJECT_DIR$/src/database/Word.java" />
+        <option value="$PROJECT_DIR$/src/database/res/jobs.txt" />
+        <option value="$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java" />
+        <option value="$PROJECT_DIR$/src/server/ServerMaintenance.java" />
         <option value="$PROJECT_DIR$/src/server/Server.java" />
       </list>
     </option>
@@ -239,9 +241,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,14 +260,20 @@
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
               <item name="forca" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forca" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="forca" type="b2602c69:ProjectViewProjectNode" />
@@ -437,25 +445,11 @@
       <workItem from="1528189704607" duration="13129000" />
       <workItem from="1528220192790" duration="5962000" />
       <workItem from="1528385748436" duration="11650000" />
+      <workItem from="1528551849158" duration="3500000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDatabase - 2018.06.05 at 20h 24m 48s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.06.05 at 20h 26m 10s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.06.07 at 16h 53m 41s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.06.07 at 16h 54m 12s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDatabase - 2018.06.07 at 16h 55m 28s.xml">
-      <configuration name="TestDatabase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestDatabase - 2018.06.07 at 16h 55m 30s.xml">
       <configuration name="TestDatabase" configurationId="JUnit" />
     </history-entry>
@@ -471,12 +465,28 @@
     <history-entry file="TestDatabase - 2018.06.07 at 16h 56m 55s.xml">
       <configuration name="TestDatabase" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestDatabase - 2018.06.09 at 14h 55m 02s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.09 at 14h 55m 52s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.09 at 14h 56m 03s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.09 at 14h 57m 04s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDatabase - 2018.06.09 at 14h 57m 39s.xml">
+      <configuration name="TestDatabase" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100153000" />
+    <option name="totallyTimeSpent" value="103653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -488,11 +498,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49921876" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -517,7 +527,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -645,23 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/test.txt" />
     <entry file="file://$PROJECT_DIR$/src/communication/responses/ScoreResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -676,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#591#592#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,10 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,37 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/responses/WordResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/animals.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -799,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/jobs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/res/colors.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -820,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/res/brands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -837,13 +783,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cli/ClientBackup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cli/ClientBackup.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/NextWordHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -854,28 +794,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/ServerMaintenance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logic/GameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="630">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -889,7 +813,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/WaitHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="270">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -906,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/EndGameHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -914,53 +838,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cli/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="240">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/res/countries.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="-2048">
           <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/ScoreHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/TestDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/brands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#Word#0" />
+            <element signature="method#testLetter#0;class#Word#0" />
+            <element signature="method#testWord#0;class#Word#0" />
+            <element signature="method#isComplete#0;class#Word#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/jobs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="11" selection-start-line="156" selection-start-column="11" selection-end-line="156" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/res/animals.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cli/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/handlers/server/ScoreHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/handlers/client/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="67" />
+        <state relative-caret-position="148">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/server/ServerMaintenance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="240">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isGameFinished#0;class#Server#0" />
+            <element signature="method#addPlayerToInactives#0;class#ServerMaintenance#0" />
+            <element signature="method#removePlayerToInactives#0;class#ServerMaintenance#0" />
+            <element signature="method#getActivePlayers#0;class#ServerMaintenance#0" />
+            <element signature="e#2781#2782#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="113" column="37" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#run#0;class#Server#0" />
+            <element signature="method#addFinishedPlayer#0;class#Server#0" />
             <element signature="method#updatePlayersUsername#0;class#Server#0" />
           </folding>
         </state>
