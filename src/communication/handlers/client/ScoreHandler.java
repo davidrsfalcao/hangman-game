@@ -6,7 +6,6 @@ import communication.responses.Response;
 public class ScoreHandler extends Handler {
 
     ScoreHandler(Response response, Client cli){
-        cli.setEnd(true);
 
         System.out.println("-----------------------");
         System.out.println(response.toString());

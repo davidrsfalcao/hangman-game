@@ -41,27 +41,9 @@ public abstract class Message implements Header {
             case SCORE:
                 return new ScoreMessage(args);
 
+            case QUIT:
+                return new QuitMessage(args);
 
-
-            /*
-            case LOGIN:
-                return new LoginMessage(args);
-
-            case REGISTER:
-                return new RegisterMessage(args);
-
-            case LISTROOMS:
-                return new ListRoomsMessage();
-
-            case JOINROOM:
-                return new JoinRoomMessage(args);
-
-            case CREATEROOM:
-                return new CreateRoomMessage(args);
-
-
-
-            */
 
         }
 

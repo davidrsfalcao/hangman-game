@@ -15,5 +15,7 @@ public interface Header {
     String NEXTWORD = "NEXTWORD";
     String ENDGAME = "ENDGAME";
     String SCORE = "SCORE";
+    String QUIT = "QUIT";
+    String OK = "OK";
 
 }

@@ -39,6 +39,10 @@ public abstract class Handler implements Header {
             case SCORE:
                 res = new ScoreHandler(response, cli).toString();
                 break;
+
+            case QUIT:
+                res = new QuitHandler(cli).toString();
+                break;
         }
 
         return res;

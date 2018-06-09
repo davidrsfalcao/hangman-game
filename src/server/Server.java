@@ -16,6 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Server implements Runnable {
 
     private String IP;
+    private boolean gameStarted = false;
     private Socket connection;
     private int rounds = 3;
     private ConcurrentHashMap<String, Integer> players = new ConcurrentHashMap<>();
@@ -103,16 +104,19 @@ public class Server implements Runnable {
 
     public boolean isGameFinished(){
 
-        ArrayList<Integer> activePlayers =  serverMaintenance.getActivePlayers();
+        if(gameStarted){
+            ArrayList<Integer> activePlayers =  serverMaintenance.getActivePlayers();
 
-        for(int i=0; i < activePlayers.size(); i++){
-            if(!playersFinished.contains(activePlayers.get(i))){
-                return false;
+            for(int i=0; i < activePlayers.size(); i++){
+                if(!playersFinished.contains(activePlayers.get(i))){
+                    return false;
+                }
             }
-        }
 
-        serverMaintenance.setEnd(true);
-        return true;
+            serverMaintenance.setEnd(true);
+            return true;
+        }
+        else return false;
     }
 
     public HashMap<Integer, String> getPlayersUsername() {
@@ -135,4 +139,7 @@ public class Server implements Runnable {
         return rounds;
     }
 
+    public void setGameStarted(boolean gameStarted) {
+        this.gameStarted = gameStarted;
+    }
 }

@@ -14,6 +14,9 @@ public class JoinHandler extends Handler {
     JoinHandler(Message message, Server server){
         String ip = ((JoinMessage) message).getIp();
 
+        if(ip.equals(server.getIP())){
+            server.setGameStarted(true);
+        }
 
         int nr_player;
         String username;

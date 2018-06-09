@@ -38,6 +38,9 @@ public abstract class Response implements Header {
 
             case SCORE:
                 return new ScoreResponse(args);
+
+            case QUIT:
+                return new QuitResponse(args);
         }
 
         return new ErrorResponse("Invalid response type");

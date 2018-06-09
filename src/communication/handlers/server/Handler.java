@@ -41,6 +41,10 @@ public abstract class Handler implements Header {
                 res = new ScoreHandler(message, server).toString();
                 break;
 
+            case QUIT:
+                res = new QuitHandler().toString();
+                break;
+
         }
 
         return res;
